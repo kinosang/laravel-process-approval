@@ -22,7 +22,6 @@ class LaravelProcessApprovalServiceProvider extends ServiceProvider
         Blade::component('approval-status-summary', ApprovalStatusSummary::class, 'ringlesoft');
 
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ringlesoft');
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->publishItems();
 
